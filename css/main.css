@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper{
+    padding: 20px;
+    border: 1px solid red;
+}
+.form-wrapper .row{
+    margin: 5px 0 5px 0;
+}
+.form-wrapper .row label{
+    display: inline-block;/*label是内联元素，无法设置宽度*/
+    width: 4em;
+}
+.form-wrapper .error{
+    color: red;
+    font-size: 12px;
+    padding-left: 6em;
+}
