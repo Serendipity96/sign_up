@@ -61,7 +61,7 @@
         }
         $.post('http://localhost:8888/sign_up',hash)
             .then(()=>{
-                console.log('success')
+                window.location.href = 'http://localhost:8888/sign_in'
             },(request)=>{
                 let {errors} = request.responseJSON
                 if(errors.email === 'invaild'){
